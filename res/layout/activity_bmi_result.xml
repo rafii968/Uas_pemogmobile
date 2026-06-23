@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#4A4ECF">
+
+    <LinearLayout
+        android:id="@+id/header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="24dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/logobmii" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="BMI KALKULATOR"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:layout_marginStart="12dp"/>
+    </LinearLayout>
+
+    <View
+        android:id="@+id/white_card_area"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@drawable/bg_white_rounded_top"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/header"
+        android:layout_marginTop="200dp" />
+
+    <LinearLayout
+        android:id="@+id/card_result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="25dp"
+        android:background="@drawable/bg_card_input"
+        android:elevation="10dp"
+        android:orientation="vertical"
+        android:padding="20dp"
+        app:layout_constraintTop_toBottomOf="@id/header"
+        app:layout_constraintBottom_toTopOf="@id/btn_back_result"
+        app:layout_constraintVertical_bias="0.6">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SKOR BMI KAMU"
+            android:textSize="11sp"
+            android:textColor="#091E7E"
+            android:layout_gravity="center"
+            android:layout_marginBottom="8dp"/>
+
+        <TextView
+            android:id="@+id/tv_bmi_score"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/rounded_white"
+            android:gravity="center"
+            android:text="22.5"
+            android:textColor="#4A4ECF"
+            android:textStyle="bold"
+            android:textSize="26sp" />
+
+        <TextView
+            android:id="@+id/tv_bmi_status"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/rounded_white"
+            android:gravity="center"
+            android:text="IDEAL"
+            android:textColor="#4A4ECF"
+            android:textStyle="bold"
+            android:textSize="15sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="AI HEALTH FORECASTER"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:textColor="#4A4ECF"
+            android:layout_marginBottom="8dp"/>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:background="@drawable/rounded_white"
+            android:padding="12dp">
+
+            <TextView
+                android:id="@+id/tv_ai_forecast"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Menganalisis..."
+                android:textColor="#555555"
+                android:textSize="13sp"
+                android:lineSpacingExtra="4dp" />
+        </ScrollView>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_back_result"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginHorizontal="25dp"
+        android:layout_marginBottom="15dp"
+        android:backgroundTint="#4A4ECF"
+        android:text="HITUNG ULANG"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"
+        app:cornerRadius="15dp"
+        app:layout_constraintBottom_toTopOf="@id/footer_img" />
+
+    <ImageView
+        android:id="@+id/footer_img"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/kebugaranjasmani"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

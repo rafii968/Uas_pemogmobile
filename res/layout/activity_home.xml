@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".HomeActivity">
+
+    <ImageView
+        android:id="@+id/img_ornament_home"
+        android:layout_width="395dp"
+        android:layout_height="345dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="4dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/gambar_ungu"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/logo_home"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:layout_marginTop="40dp"
+
+        android:background="@drawable/bg_logo_home"
+        android:padding="12dp"
+        android:elevation="4dp"
+
+        android:src="@drawable/logobmii"
+        app:layout_constraintBottom_toTopOf="@id/tv_welcome"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="packed" />
+    <TextView
+        android:id="@+id/tv_welcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="PILIH UNTUK MELANJUTKAN"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/btn_bmi_calculator"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logo_home" />
+
+    <Button
+        android:id="@+id/btn_bmi_calculator"
+        android:layout_width="280dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/button_start"
+        android:text="@string/btn_bmi_calculator"
+        android:textColor="@android:color/white"
+        app:backgroundTint="@null"
+        app:layout_constraintBottom_toTopOf="@+id/btn_tips_ideal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_welcome" />
+
+    <Button
+        android:id="@+id/btn_tips_ideal"
+        android:layout_width="280dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/button_white"
+        android:text="@string/btn_tips_ideal"
+        android:textColor="#4A4ECF"
+        app:backgroundTint="@null"
+        app:layout_constraintBottom_toTopOf="@+id/btn_ai_consultation"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_bmi_calculator" />
+
+    <Button
+        android:id="@+id/btn_ai_consultation"
+        android:layout_width="280dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/button_start"
+        android:text="@string/btn_ai_consultation"
+        android:textColor="@android:color/white"
+        app:backgroundTint="@null"
+        app:layout_constraintBottom_toTopOf="@+id/btn_scan_ai"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_tips_ideal" />
+
+    <Button
+        android:id="@+id/btn_scan_ai"
+        android:layout_width="280dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/button_start"
+        android:text="KAMERA BMI"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        app:backgroundTint="@null"
+        app:icon="@android:drawable/ic_menu_camera"
+        app:iconGravity="textStart"
+        app:iconPadding="8dp"
+        app:iconTint="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_ai_consultation" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

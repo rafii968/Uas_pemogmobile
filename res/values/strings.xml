@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">BMI Kalkulator Appp</string>
+    <string name="intro_message">HITUNG SEBERAPA IDEAL TUBUH ANDA DENGAN APLIKASI INI</string>
+    <string name="start_button">MULAI</string>
+    <string name="app_title_bmi">BMI KALKULATOR</string>
+    <string name="input_data_kosong">Mohon isi semua data!</string>
+    <string name="input_tidak_valid">Input tidak valid</string>
+
+    <string name="welcome_message">SELAMAT DATANG</string>
+
+    <string name="home_pilih">PILIH UNTUK MELANJUTKAN</string>
+    <string name="btn_bmi_calculator">BMI KALKULATOR</string>
+    <string name="btn_tips_ideal">TIPS BADAN IDEAL</string>
+    <string name="btn_ai_consultation">KONSULTASI DENGAN AI</string>
+    <string name="hint_height">MASUKAN TINGGI BADAN ANDA (CM)</string>
+    <string name="hint_weight">MASUKAN BERAT BADAN ANDA (KG)</string>
+    <string name="btn_hitung">HITUNG</string>
+</resources>

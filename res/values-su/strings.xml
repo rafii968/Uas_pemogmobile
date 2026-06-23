@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">BMI Kalkulator Appp</string>
+    <string name="intro_message">ITUNG SAKUMAHAN IDEAL AWAK ANJEUN KU APLIKASI IEU</string>
+    <string name="start_button">MIMITIAN</string>
+    <string name="app_title_bmi">BMI KALKULATOR</string>
+    <string name="input_data_kosong">Eusian sadaya data!</string>
+    <string name="input_tidak_valid">Input teu sah</string>
+    <string name="welcome_message">WILUJENG SUMPING</string>
+
+    <string name="home_pilih">PILIH PIKEUN NGAJUTKEUN</string>
+    <string name="btn_bmi_calculator">BMI KALKULATOR</string>
+    <string name="btn_tips_ideal">TIPS AWAK IDEAL</string>
+    <string name="btn_ai_consultation">KONSULTASI SARENG AI</string>
+    <string name="hint_height">EUSIAN TINGGI BADAN ANJEUN (CM)</string>
+    <string name="hint_weight">EUSIAN BERAT BADAN ANJEUN (KG)</string>
+    <string name="btn_hitung">ITUNG</string>
+</resources>
